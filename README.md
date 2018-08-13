@@ -1,6 +1,8 @@
 # Hoverboard Sensorboard
 This project is the reverse engineering of a hoverboard sensorboard.
 
+[![image of schematic](https://raw.githubusercontent.com/cyber-murmel/hoverboard-sensor/master/plots/sensorboard.png)](https://github.com/cyber-murmel/hoverboard-sensor/raw/master/plots/sensorboard.pdf)
+
 ## MPU
 The microprocessor unit is a STM32F103C8T6 - the same processor as on the [Blue Pill dev board](https://wiki.stm32duino.com/index.php?title=Blue_Pill).
 
@@ -9,4 +11,3 @@ The inertial measurement unit is a [MPU-6050](https://www.invensense.com/product
 
 ## Voltage Converters
 The +15 incoming voltage are converted to +5V via a [LM78M05](https://www.st.com/resource/en/datasheet/l78.pdf). The +5V are converted to +3.3V  via a [ASM1117-3.3](http://www.advanced-monolithic.com/pdf/ds1117.pdf). The whole setup is pretty yolo, since there is no cap stabilizing the +5V rail.
-
